@@ -2,10 +2,10 @@
 //  Meal.swift
 //  FoodTracker
 //
-//  Created by Jane Appleseed on 5/26/15.
-//  Copyright © 2015 Apple Inc. All rights reserved.
-//  See LICENSE.txt for this sample’s licensing information.
-//
+//  Created by Elena Wiener on 8/4/16.
+//  Copyright © 2016 Elena. All rights reserved.
+////
+
 
 import UIKit
 
@@ -15,7 +15,7 @@ class Meal {
     var name: String
     var photo: UIImage?
     var rating: Int
-
+    
     // MARK: Initialization
     
     init?(name: String, photo: UIImage?, rating: Int) {
@@ -29,5 +29,6 @@ class Meal {
             return nil
         }
     }
-
+    
 }
+

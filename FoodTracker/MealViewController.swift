@@ -1,12 +1,10 @@
 //
-//  MealViewController.swift
+//  ViewController.swift
 //  FoodTracker
 //
-//  Created by Jane Appleseed on 5/23/15.
-//  Copyright © 2015 Apple Inc. All rights reserved.
-//  See LICENSE.txt for this sample’s licensing information.
+//  Created by Elena Wiener on 8/3/16.
+//  Copyright © 2016 Elena. All rights reserved.
 //
-
 import UIKit
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -18,11 +16,11 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     /*
-        This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
-        or constructed as part of adding a new meal.
-    */
+     This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
+     or constructed as part of adding a new meal.
+     */
     var meal: Meal?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,7 +43,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         checkValidMealName()
         navigationItem.title = textField.text
     }
-
+    
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
         saveButton.enabled = false
@@ -109,6 +107,5 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
-
+    
 }
-

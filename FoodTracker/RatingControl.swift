@@ -2,7 +2,7 @@
 //  RatingControl.swift
 //  FoodTracker
 //
-//  Created by Jane Appleseed on 5/26/15.
+//  Created by Elena Wiener on 4/2/16
 //  Copyright © 2015 Apple Inc. All rights reserved.
 //  See LICENSE.txt for this sample’s licensing information.
 //
@@ -20,9 +20,9 @@ class RatingControl: UIView {
     var ratingButtons = [UIButton]()
     var spacing = 5
     var stars = 5
-
+    
     // MARK: Initialization
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
